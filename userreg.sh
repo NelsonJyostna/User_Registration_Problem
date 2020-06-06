@@ -43,6 +43,19 @@ fi
 
 
 
+read -p "Enter your Mobileno : " mobno
+
+mobnopat="^[0-9]{2}(\s)?[7-9]{1}[0-9]{9}"
+
+if [[ $mobno =~ $mobnopat ]]
+then
+        echo "Valid Mobile No"
+else
+        echo "Please Enter Your Country Code space and Valid Mobile No "
+fi
+
+
+
 
 
 
