@@ -57,7 +57,7 @@ fi
 
 read -p "Enter your Password : " psswd
 
-if [[ $psswd -ge 8 ]]
+if [[ ${#psswd} -ge 8 ]]
 then
         echo "Valid Password"
 else
