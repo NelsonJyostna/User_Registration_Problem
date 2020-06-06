@@ -57,11 +57,11 @@ fi
 
 read -p "Enter your Password : " psswd
 
-if [[ ${#psswd} -ge 8 && "$psswd" == *[[:upper:]]* && "$psswd" == *[[:lower:]]* ]]
+if [[ ${#psswd} -ge 8 && "$psswd" == *[[:upper:]]* && "$psswd" == *[[:lower:]]* && "$psswd" ==  *[0-9]* ]]
 then
         echo "Valid Password"
 else
-        echo "Please Enter Your Password of 8 Characters With Atleast one Uppercase and One Lowercase"
+        echo "Please Enter Your Password of 8 Characters With Atleast one Uppercase & Lowercase, One Numeric No"
 fi
 
 
