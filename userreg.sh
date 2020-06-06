@@ -55,6 +55,14 @@ else
 fi
 
 
+read -p "Enter your Password : " psswd
+
+if [[ $psswd -ge 8 ]]
+then
+        echo "Valid Password"
+else
+        echo "Please Enter Your Password of 8 Characters"
+fi
 
 
 
